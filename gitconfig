@@ -1,0 +1,9 @@
+[user]
+	email = gsorbier@gmail.com
+	name = Guillaume Sorbier
+[alias]
+	ci = commit
+	co = checkout
+	l = log
+	s = status
+	d = diff

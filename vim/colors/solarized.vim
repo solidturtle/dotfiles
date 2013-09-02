@@ -1,0 +1,1 @@
+/Users/guillaume/git/vim-colors-solarized/colors/solarized.vim
