@@ -55,9 +55,9 @@ if has("autocmd")
   autocmd FileType ruby setlocal makeprg=rake
   autocmd FileType groovy setlocal makeprg=groovy\ %
   autocmd FileType python setlocal makeprg=/Users/guillaume/.pythonbrew/pythons/Python-3.3.0/bin/python\ %
-  " autocmd bufnewfile *.rb exe "silent 0read !insert_header_comment.rb %"
-  " autocmd bufnewfile *.rb exe "normal +1ma"
-  " autocmd Bufwritepre,filewritepre *.rb exe "silent !update_header_comment.rb %"
-  " autocmd Bufwritepre,filewritepre *.rb exe "normal +1ma"
-  " autocmd bufwritepost,filewritepost *.rb execute "normal `a"
+"  autocmd bufnewfile *.rb exe "silent 0read !insert_header_comment.rb %"
+"  autocmd bufnewfile *.rb exe "normal +1ma"
+"  autocmd Bufwritepre,filewritepre *.rb exe "silent !update_header_comment.rb %"
+"  autocmd Bufwritepre,filewritepre *.rb exe "normal +1ma"
+"  autocmd bufwritepost,filewritepost *.rb execute "normal `a"
 endif
