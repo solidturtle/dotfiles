@@ -1,0 +1,11 @@
+## Directory
+alias lib='open ~/Library/Application\ Support/'
+alias lbb='open ~/Documents/Work/littlebigboite.com'
+alias lbbt='open ~/Documents/Work/littlebigboite.com/wp-content/themes/BLANK-Theme'
+
+## SliceHost
+alias slice="ssh -p 30100 deploy@50.57.85.132"
+alias colibri="ssh root@192.168.1.117"
+
+export GITHUB_TOKEN="94655b38e95b78874befb25113ccd53d"
+export GITHUB_USER="solidturtle"
