@@ -27,12 +27,12 @@ set wildmode=longest,list,full
 set wrap
 set ofu=syntaxcomplete#Complete
 
-colorscheme desert
-filetype off		              " required!
-syntax on		                  " turn on syntax highlighting
-
 set rtp+=~/dotfiles/vim/bundle/vundle/
 call vundle#rc()
+
+colorscheme xoria256
+filetype off		              " required!
+syntax on		                  " turn on syntax highlighting
 
 Bundle 'gmarik/vundle'
 Bundle 'lucapette/vim-ruby-doc'
