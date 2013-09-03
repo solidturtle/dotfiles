@@ -4,7 +4,7 @@ ${GREEN}\u${NO_COLOUR} \
 ${BLACK}: \
 ${GREEN}\w${NO_COLOUR} \
 ${BLACK} \n▶  ${NO_COLOUR}"
-elif [[ `uname` == 'FreeBSD' ]]; then
+elif [[ `uname` == 'Darwin' ]]; then
 	## --- path_helper OSX ---
 	eval `/usr/libexec/path_helper -s`
 	#export GROOVY_HOME=$(brew --prefix groovy)/libexec
