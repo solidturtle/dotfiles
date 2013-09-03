@@ -42,3 +42,4 @@ Thumbs.db
 Gemfile.lock
 *~
 __MACOSX
+emacs/auto-save-list/
