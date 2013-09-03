@@ -3,4 +3,4 @@
 . ~/dotfiles/bash/aliases
 . ~/dotfiles/bash/functions
 . ~/dotfiles/bash/os
-. ~/dotfiles/bash/secret
+. ~/dotfiles/bash/honey
