@@ -39,6 +39,13 @@ Thumbs.db
 # End Github sample  #
 ######################
 
+*~
+*.orig
+*.rej
+*.swp
+.#*
+*.o
+.DS_Store
 Gemfile.lock
 *~
 __MACOSX

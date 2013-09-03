@@ -1,12 +1,16 @@
+export CLICOLOR=1
+# This line can break dynamic linking
 # export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+# export EDITOR='mate -w'
+export LSCOLORS=ExFxCxDxBxegedabagacad
 
 export PATH=$PATH:~/bin
 # export PATH=/Users/guillaume/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 # export TERM=screen-16color
 
-export ALTERNATE_EDITOR=””
+export ALTERNATE_EDITOR=''
 export CLICOLOR=1
-export EDITOR='mvim'
+export EDITOR='vim'
 export GIT_EDITOR=vim
 #export JAVA_HOME=/Library/Java/Home
 export JAVA_HOME=/usr/local/java/jdk1.7.0_25
