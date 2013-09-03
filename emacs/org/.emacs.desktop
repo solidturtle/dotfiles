@@ -1,0 +1,41 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Sep  3 16:48:10 2013
+;; Desktop file format version 206
+;; Emacs version 24.3.50.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (21029 63146 131319 502000) (desktop . "206") "guillaume@guillaume-desktop" nil nil ((((font-backend xft x) (font . "-unknown-Ubuntu Mono-normal-normal-normal-*-17-*-*-*-m-0-iso10646-1") (font-parameter . "Ubuntu Mono 13") (border-width . 0) (internal-border-width . 0) (vertical-scroll-bars . right) (foreground-color . "black") (background-color . "white") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 9) (right-fringe . 9) (scroll-bar-foreground) (scroll-bar-background . "grey75") (menu-bar-lines . 1) (tool-bar-lines . 1) (title) (wait-for-wm . t) (fullscreen) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (alpha) (horizontal-scroll-bars . t) (display-type . color) (background-mode . light) (cursor-color . "black") (sticky) (environment) (frameset--id . "1E85-204B-A7D9-2DC9") (frameset--mini t . t) (height . 35) (width . 80) (modeline . t) (minibuffer . t) (unsplittable) (left . 1366) (top . 52) (icon-name) (visibility . t) (display . ":0.0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2)) leaf (total-height . 34) (total-width . 84) (normal-height . 1.0) (normal-width . 1.0) (buffer "tp_suivi.org" (selected . t) (hscroll . 0) (fringes 9 9 nil) (margins nil) (scroll-bars 16 2 t nil) (vscroll . 0) (dedicated) (point . 203) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("book" "togg" "fold" "togg"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/home/guillaume/dotfiles/emacs/org" "~/dotfiles/emacs/org/tp_suivi.org"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/guillaume/dotfiles/emacs/org/tp_suivi.org"
+  "tp_suivi.org"
+  'org-mode
+  '(org-indent-mode)
+  203
+  '(162 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "/usr/share/emacs/24.3.50/lisp/loaddefs.el"
+  "loaddefs.el"
+  'emacs-lisp-mode
+  nil
+  224708
+  '(nil nil)
+  t
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+

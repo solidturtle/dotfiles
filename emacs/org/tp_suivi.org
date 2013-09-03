@@ -1,0 +1,8 @@
+
+* TODO Configurer emacs
+* Eclipse 4 Tutoriel
+** Chapitre 10
+*** Ta create object according to Dependency Injection we have to use :
+ContextInjectionFactory.make
+
+* Bug de la personne qui paie deux fois
