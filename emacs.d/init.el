@@ -3,6 +3,16 @@
 ;(setq mac-command-modifier 'meta)
 ;(setq mac-option-modifier 'alt)
 
+(require 'package)
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'package-archives
+  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(require 'ido)
+
+(ido-mode t)
+(package-initialize)
+
 ;(setq epa-file-cache-passphrase-for-symmetric-encryption t)
 ;(if (file-exists-p "~/.authinfo.gpg")
 ;    (setq auth-sources '((:source "~/.authinfo.gpg" :host t :protocol t)))
