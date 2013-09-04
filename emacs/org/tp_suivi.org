@@ -2,7 +2,13 @@
 * TODO Configurer emacs
 * Eclipse 4 Tutoriel
 ** Chapitre 10
-*** Ta create object according to Dependency Injection we have to use :
-ContextInjectionFactory.make
+- To create object according to Dependency Injection we have to use : ContextInjectionFactory.make
 
-* Bug de la personne qui paie deux fois
+
+* Soucis à analyser
+- 
+- Bug de la personne qui paie deux fois
+
+* Points intéressants
+- [ ] Lien http://doc.prestashop.com/pages/viewpage.action?pageId=3506242#Ajouterdesproduitsetdescat%C3%A9goriesdeproduits-Cr%C3%A9erunpackdeproduits
+- [ ] Etudier la solution OpenERP
