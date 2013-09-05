@@ -7,3 +7,8 @@
 
 (ido-mode t)
 (package-initialize)
+
+;; yasnippets
+(require 'yasnippets)
+(yas-global-mode 1)
+(add-to-list yas-snippets-dirs "~/snippets")
