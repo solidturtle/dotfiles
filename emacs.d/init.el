@@ -71,20 +71,12 @@
   (interactive)
   (switch-to-buffer (other-buffer (current-buffer) 1)))
 
-(require 'package)
-(add-to-list 'load-path "~/.emacs.d/lisp/")
-(add-to-list 'package-archives
-  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(find-file "~/dotfiles/emacs.d/org/tp_suivi.org")
+(setq inhibit-startup-message t)
  
-(require 'ido)
- 
-(ido-mode t)
-(package-initialize)
- 
-;; yasnippets
-(require 'yasnippets)
+;; yasnippet
+(require 'yasnippet)
 (yas-global-mode 1)
-(add-to-list yas-snippets-dirs "~/snippets")
 
 ;; (add-hook 'kill-emacs-hook
 ;; 	  (append-to-file "brume"
