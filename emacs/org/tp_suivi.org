@@ -12,3 +12,5 @@
 * Points intéressants
 - [ ] Lien http://doc.prestashop.com/pages/viewpage.action?pageId=3506242#Ajouterdesproduitsetdescat%C3%A9goriesdeproduits-Cr%C3%A9erunpackdeproduits
 - [ ] Etudier la solution OpenERP
+
+* <2013-09-06 ven.> PYC à réussi à convertir JAjoutProduit pour qu'il soit compatible avec JPrestaRest
