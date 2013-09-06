@@ -14,3 +14,13 @@
 - [ ] Etudier la solution OpenERP
 
 * <2013-09-06 ven.> PYC à réussi à convertir JAjoutProduit pour qu'il soit compatible avec JPrestaRest
+
+* Composition d'une application Eclipse E4
+
+** OSGI Context
+
+*** Workbench Context
+
+**** Trimmed Window Context
+
+***** Part Context
