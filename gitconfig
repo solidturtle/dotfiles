@@ -1,4 +1,10 @@
-U2FsdGVkX19x4o91wRhYy2NXVIEwaVlBP+SVilfuS02tbx8E74TBvhePcnvjmzXc
-xoytfRq5ATz3tq/GQHu0eTc6Eb/C7y3E0P7KMlmYhswiph6QlLNzSasKG092iCsA
-pXR5iVFHWNVDyS4SoCL2g3TIyKVq0kVyY9peXSoeuJDd7MQovdwVD5SH3dMkRf9V
-+aOg9L9Gmo4ZAlHp0kOw5Zlsdv8znzWHnYDKy3mR4pk=
+[user]
+	email = guillaume.sorbier@gmail.com
+	name = Guillaume Sorbier
+[alias]
+	ci = commit
+	co = checkout
+	l = log
+	s = status
+	d = diff
+	dt = difftool

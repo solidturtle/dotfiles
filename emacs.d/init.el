@@ -36,6 +36,7 @@
  delete-old-versions t
  kept-new-versions 6
  kept-old-versions 2
+ yas-snippets-dirs "~/snippets"
  version-control t)
 (setq backup-directory-alist
           `((".*" . ,temporary-file-directory)))
@@ -70,7 +71,20 @@
   (interactive)
   (switch-to-buffer (other-buffer (current-buffer) 1)))
 
-
+(require 'package)
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'package-archives
+  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+ 
+(require 'ido)
+ 
+(ido-mode t)
+(package-initialize)
+ 
+;; yasnippets
+(require 'yasnippets)
+(yas-global-mode 1)
+(add-to-list yas-snippets-dirs "~/snippets")
 
 ;; (add-hook 'kill-emacs-hook
 ;; 	  (append-to-file "brume"
