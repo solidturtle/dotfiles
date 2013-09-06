@@ -7,9 +7,9 @@ ${BLACK} \n▶  ${NO_COLOUR}"
 elif [[ `uname` == 'Darwin' ]]; then
 	## --- path_helper OSX ---
 	eval `/usr/libexec/path_helper -s`
-	#export GROOVY_HOME=$(brew --prefix groovy)/libexec
+	# export GROOVY_HOME=$(brew --prefix groovy)/libexec
 	# Load pythonbrew
-	[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
+	# [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 	## --- Configuration qui doit resté en local pour des raisons sécurité ---
 	PS1="\
 ${GREEN}\u${NO_COLOUR} \
