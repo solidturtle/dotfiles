@@ -42,8 +42,6 @@
           `((".*" . ,temporary-file-directory)))
     (setq auto-save-file-name-transforms
           `((".*" ,temporary-file-directory t)))
-;; Load Path
-(add-to-list 'load-path "~/dotfiles/emacs/")
 
 (require 'server)
 (unless (server-running-p)
@@ -56,15 +54,16 @@
 ;; (global-set-key "\C-ca" 'org-agenda)
 ;; (global-set-key "\C-cb" 'org-iswitchb)
 ;; (global-set-key "\C-cc" 'org-capture)
-(global-set-key "\C-ce" (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
-(global-set-key "\C-cx" 'eval-buffer)
+(global-set-key "\C-cge" (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
+(global-set-key "\C-cgx" 'eval-buffer)
 (global-set-key "\C-c\C-c" 'switch-to-previous-buffer)
-(global-set-key "\C-cb" 'recentf-open-files)
+(global-set-key "\C-cgb" 'recentf-open-files)
+(global-set-key "\C-cgp" 'package-list-packages)
 
 (global-unset-key "\C-z")
 
 (add-hook 'org-mode-hook 'turn-on-font-lock)
-
+(setq projectile-completion-system 'grizzl)
 (load-theme 'wombat t)
 
 (defun switch-to-previous-buffer ()
