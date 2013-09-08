@@ -1,11 +1,12 @@
-projectile
-pkg-info
-s
-dash
-fill-column-indicator
 anything
 dpaste
+fill-column-indicator
+geben
 mmm-mode
 paredit
 php-mode
+projectile
+pkg-info
+dash
+s
 yasnippet
