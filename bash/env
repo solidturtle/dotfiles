@@ -17,5 +17,4 @@ export JAVA_HOME=/usr/local/java/jdk1.7.0_25
 export LC_ALL=fr_FR.UTF-8
 export LC_CTYPE=fr_FR.UTF-8
 export LSCOLORS=ExFxCxDxBxegedabagacad
-export VIM=$HOME/dotfiles/vim/
-
+export RUBIES=~/.rubies

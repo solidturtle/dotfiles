@@ -4,13 +4,16 @@ ${GREEN}\u${NO_COLOUR} \
 ${BLACK}: \
 ${GREEN}\w${NO_COLOUR} \
 ${BLACK} \n▶  ${NO_COLOUR}"
-elif [[ `uname` == 'FreeBSD' ]]; then
+elif [[ `uname` == 'Darwin' ]]; then
 	## --- path_helper OSX ---
 	eval `/usr/libexec/path_helper -s`
-	#export GROOVY_HOME=$(brew --prefix groovy)/libexec
+	# export GROOVY_HOME=$(brew --prefix groovy)/libexec
 	# Load pythonbrew
-	[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
+	# [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 	## --- Configuration qui doit resté en local pour des raisons sécurité ---
+	# eval "$(rbenv init -)"
+  source /usr/local/opt/chruby/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
 	PS1="\
 ${GREEN}\u${NO_COLOUR} \
 ${WHITE}: \
