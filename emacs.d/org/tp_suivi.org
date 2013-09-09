@@ -14,3 +14,23 @@
 - [ ] Etudier la solution OpenERP
 
 * <2013-09-06 ven.> PYC à réussi à convertir JAjoutProduit pour qu'il soit compatible avec JPrestaRest
+
+
+* <2013-09-09 lun. 09:00> Rania rapporte que deux machines sont en pannes dans la boutique
+  Cause : Les machines avaient un conflit d'adresse IP.
+  Solution : Dans l'interface du routeur effacer les baux DHCP.
+
+* <2013-09-09 lun.> Panne du serveur tissus-price.com
+  10h39 : Panne
+  11h00 : Rétablissement
+  Cause : L'hébergement OVH n'avait pas été renouvellé.
+  Solution : Mettre l'hébergement en automatique.
+* Composition d'une application Eclipse E4
+
+** OSGI Context
+
+*** Workbench Context
+
+**** Trimmed Window Context
+
+***** Part Context
