@@ -12,8 +12,8 @@ elif [[ `uname` == 'Darwin' ]]; then
 	# [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 	## --- Configuration qui doit resté en local pour des raisons sécurité ---
 	# eval "$(rbenv init -)"
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source /usr/local/share/chruby/auto.sh
+  	# source /usr/local/opt/chruby/share/chruby/chruby.sh
+  	# source /usr/local/share/chruby/auto.sh
 	PS1="\
 ${GREEN}\u${NO_COLOUR} \
 ${WHITE}: \
