@@ -30,7 +30,7 @@ set ofu=syntaxcomplete#Complete
 set rtp+=~/dotfiles/vim/bundle/vundle/
 call vundle#rc()
 
-colorscheme xoria256
+colorscheme vylight
 filetype off		              " required!
 syntax on		                  " turn on syntax highlighting
 
