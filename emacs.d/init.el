@@ -8,10 +8,12 @@
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
+(package-initialize)
+
 (require 'ido)
+(require 'sr-speedbar)
 
 (ido-mode t)
-(package-initialize)
 
 ;(setq epa-file-cache-passphrase-for-symmetric-encryption t)
 ;(if (file-exists-p "~/.authinfo.gpg")
