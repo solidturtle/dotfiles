@@ -4,7 +4,7 @@ export CLICOLOR=1
 # export EDITOR='mate -w'
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-export PATH=$PATH:~/bin
+export PATH=~/bin:$PATH
 # export PATH=/Users/guillaume/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 # export TERM=screen-16color
 
