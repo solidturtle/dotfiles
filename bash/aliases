@@ -33,10 +33,8 @@ alias ctags-bbedit='/usr/bin/ctags --excmd=number --tag-relative=no'
 ## Emacs
 # alias emacs='/usr/local/Cellar/emacs/24.2/Emacs.app/Contents/MacOS/Emacs -nw'
 
-## Sublime Text 2 Editor
+alias l='ls -l'
 alias st=subl
-
-## Cheat Sheet
 alias cs='cheat sheets'
 
 ## Editor

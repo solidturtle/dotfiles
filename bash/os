@@ -21,3 +21,6 @@ ${GREEN}\w${NO_COLOUR} \
 ${WHITE}\$(vcprompt)\
 ${LIGHT_WHITE} \n▶  ${NO_COLOUR}"
 fi
+
+## specific aliases
+alias private='encfs $HOME/Documents/Privé $HOME/Documents/Visible'
