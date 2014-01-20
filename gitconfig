@@ -2,9 +2,11 @@
 	email = guillaume.sorbier@gmail.com
 	name = Guillaume Sorbier
 [alias]
+  b = branch
 	ci = commit
 	co = checkout
-	l = log
-	s = status
 	d = diff
 	dt = difftool
+	l = log
+  mt = mergetool
+	s = status
