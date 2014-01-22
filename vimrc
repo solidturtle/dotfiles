@@ -30,7 +30,8 @@ set ofu=syntaxcomplete#Complete
 set rtp+=~/dotfiles/vim/bundle/vundle/
 call vundle#rc()
 
-colorscheme vylight
+" colorscheme vylight
+colorscheme desert
 filetype off		              " required!
 syntax on		                  " turn on syntax highlighting
 
@@ -40,6 +41,11 @@ Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-rake'
+Bundle 'kien/ctrlp.vim.git'
+Bundle 'jeetsukumaran/vim-buffergator'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'thinca/vim-quickrun'
+Bundle 'fs111/pydoc.vim'
 
 map <Esc><Esc> :w<CR>
 map <D-s> :w<CR>
@@ -47,6 +53,8 @@ map <F8> :NERDTreeToggle<CR>
 map <F9> :TagbarToggle<CR>
 map <F5> :w<CR>:make<CR>
 map <Leader>cd :cd %:p:h<CR>
+
+nnoremap <buffer> K :<C-u>execute "!pydoc " . expand("<cword>")<CR>
 
 let g:ruby_doc_command='open'
 
@@ -60,4 +68,24 @@ if has("autocmd")
 "  autocmd Bufwritepre,filewritepre *.rb exe "silent !update_header_comment.rb %"
 "  autocmd Bufwritepre,filewritepre *.rb exe "normal +1ma"
 "  autocmd bufwritepost,filewritepost *.rb execute "normal `a"
+endif
+
+"""
+""" GUI version
+"""
+if has('gui_running')
+  set guifont=Droid\ Sans\ Mono\ 10
+  set go-=m
+  set go-=T
+  set t_Co=256
+  set encoding=utf-8
+
+  let g:Powerline_symbols = 'fancy'
+endif
+
+"""
+""" Read specific vimrc file if it exists.
+"""
+if filereadable('.vimrc.local')
+  source .vimrc.local
 endif
