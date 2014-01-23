@@ -6,7 +6,7 @@
 (require 'package)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ;; (package-initialize)
 
@@ -21,8 +21,8 @@
 (eval-after-load "menu-bar" '(require 'menu-bar+))
 
 (tool-bar-mode -1)
-
-(ido-mode t)
+(projectile-global-mode 1)
+(ido-mode 1)
 
 ;(setq epa-file-cache-passphrase-for-symmetric-encryption t)
 ;(if (file-exists-p "~/.authinfo.gpg")
@@ -36,6 +36,7 @@
 (setq org-log-done 'note)               ;
 (electric-pair-mode)                    ; Paire "" () []
 (setq visible-bell 0)                   ; Enleve le son d'alerte
+(setq tab-width 4)
 (setq ring-bell-function 'ignore)       ; Enleve le flash d'alerte
 (setq org-directory "~/Documents personnels/Emacs/org/")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
@@ -53,6 +54,8 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+
+(setq-default indent-tabs-mode nil)
 
 (require 'server)
 (unless (server-running-p)
@@ -78,11 +81,14 @@
 (load-theme 'wombat t)
 
 (defun switch-to-previous-buffer ()
-  (interactive)
+  (interactive)q
   (switch-to-buffer (other-buffer (current-buffer) 1)))
 
 ;; (find-file "~/dotfiles/emacs.d/org/tp_suivi.org")
 (setq inhibit-startup-message t)
+
+(add-to-list 'default-frame-alist
+             '(font . "Droid Sans Mono-10"))
 
 ;; yasnippet
 (require 'yasnippet)
@@ -100,6 +106,16 @@
 (add-hook 'lisp-mode-hook             #'enable-paredit-mode)
 (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
 (add-hook 'scheme-mode-hook           #'enable-paredit-mode)
+(add-hook 'prog-mode-hook
+          '(lambda()
+             (fci-mode)
+             (whitespace-mode)
+             (setq
+              tab-width 4)))
+(add-hook 'lisp-interaction-mode-hook
+          '(lambda()
+             (fci-mode 0)
+             (whitespace-mode 0)))
 
 (recentf-mode t)
 (ido-mode t)
