@@ -8,7 +8,10 @@
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-(package-initialize)
+;; (package-initialize)
+
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
 
 (require 'fill-column-indicator)
 (require 'ido)
