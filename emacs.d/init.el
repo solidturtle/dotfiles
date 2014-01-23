@@ -10,8 +10,14 @@
 
 (package-initialize)
 
+(require 'fill-column-indicator)
 (require 'ido)
 (require 'sr-speedbar)
+(require 'whitespace)
+
+(eval-after-load "menu-bar" '(require 'menu-bar+))
+
+(tool-bar-mode -1)
 
 (ido-mode t)
 
@@ -24,10 +30,10 @@
 ;(setq nntp-authinfo-file "~/.authinfo.gpg")
 ;(setq erc-autojoin-channels-alist '(("freenode.net" "#emacs")))
 ;(erc :server "irc.freenode.net" :port 6667 :nick "opossomme")
-(setq org-log-done 'note)		;
-(electric-pair-mode)			; Paire "" () []
-(setq visible-bell 0)			; Enleve le son d'alerte
-(setq ring-bell-function 'ignore)	; Enleve le flash d'alerte
+(setq org-log-done 'note)               ;
+(electric-pair-mode)                    ; Paire "" () []
+(setq visible-bell 0)                   ; Enleve le son d'alerte
+(setq ring-bell-function 'ignore)       ; Enleve le flash d'alerte
 (setq org-directory "~/Documents personnels/Emacs/org/")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (setq inhibit-splash-scr t)
@@ -41,9 +47,9 @@
  yas-snippets-dirs "~/snippets"
  version-control t)
 (setq backup-directory-alist
-          `((".*" . ,temporary-file-directory)))
-    (setq auto-save-file-name-transforms
-          `((".*" ,temporary-file-directory t)))
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
 
 (require 'server)
 (unless (server-running-p)
@@ -72,25 +78,25 @@
   (interactive)
   (switch-to-buffer (other-buffer (current-buffer) 1)))
 
-(find-file "~/dotfiles/emacs.d/org/tp_suivi.org")
+;; (find-file "~/dotfiles/emacs.d/org/tp_suivi.org")
 (setq inhibit-startup-message t)
- 
+
 ;; yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
 
 ;; (add-hook 'kill-emacs-hook
-;; 	  (append-to-file "brume"
-;; 			  nil
-;; 			  ((expand-file-name "dotfiles/emacs.d/packages" (getenv "HOME")))))
+;;        (append-to-file "brume"
+;;                        nil
+;;                        ((expand-file-name "dotfiles/emacs.d/packages" (getenv "HOME")))))
 
 (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
-    (add-hook 'emacs-lisp-mode-hook       #'enable-paredit-mode)
-    (add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
-    (add-hook 'ielm-mode-hook             #'enable-paredit-mode)
-    (add-hook 'lisp-mode-hook             #'enable-paredit-mode)
-    (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
-    (add-hook 'scheme-mode-hook           #'enable-paredit-mode)
+(add-hook 'emacs-lisp-mode-hook       #'enable-paredit-mode)
+(add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
+(add-hook 'ielm-mode-hook             #'enable-paredit-mode)
+(add-hook 'lisp-mode-hook             #'enable-paredit-mode)
+(add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
+(add-hook 'scheme-mode-hook           #'enable-paredit-mode)
 
 (recentf-mode t)
 (ido-mode t)
