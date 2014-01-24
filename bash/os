@@ -1,8 +1,10 @@
 if [[ `uname` == 'Linux' ]]; then
 	PS1="\
 ${GREEN}\u${NO_COLOUR} \
-${BLACK}: \
-${GREEN}\w${NO_COLOUR} \
+${BLACK}[ \
+${GREEN}\W \
+${BLACK}]${NO_COLOUR} \
+${RED}\$(vcprompt)\
 ${BLACK} \n▶  ${NO_COLOUR}"
 elif [[ `uname` == 'Darwin' ]]; then
 	## --- path_helper OSX ---
