@@ -17,13 +17,15 @@
 (require 'ido)
 (require 'sr-speedbar)
 (require 'whitespace)
+(require 'session)
 
 (eval-after-load "menu-bar" '(require 'menu-bar+))
 
 (tool-bar-mode -1)
 (projectile-global-mode 1)
 (ido-mode 1)
-
+(add-hook 'after-init-hook 'session-initialize)
+(custom-set-variables '(session-save-file "~/dotfiles/emacs.d/emacs.session"))
 ;(setq epa-file-cache-passphrase-for-symmetric-encryption t)
 ;(if (file-exists-p "~/.authinfo.gpg")
 ;    (setq auth-sources '((:source "~/.authinfo.gpg" :host t :protocol t)))
