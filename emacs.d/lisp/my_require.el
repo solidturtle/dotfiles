@@ -1,0 +1,5 @@
+(require 'fill-column-indicator)
+(require 'ido)
+(require 'sr-speedbar)
+(require 'whitespace)
+(require 'yasnippet)
