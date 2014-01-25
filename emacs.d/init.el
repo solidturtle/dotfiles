@@ -3,10 +3,9 @@
 ;(setq mac-command-modifier 'meta)
 ;(setq mac-option-modifier 'alt)
 
-(require 'package)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;; (add-to-list 'package-archives
+;;              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ;; (package-initialize)
 
@@ -17,64 +16,15 @@
 (require 'ido)
 (require 'sr-speedbar)
 (require 'whitespace)
-(require 'session)
+(require 'variable)
+(require 'window-system)
+;; (require 'session)
 
 (eval-after-load "menu-bar" '(require 'menu-bar+))
 
-(tool-bar-mode -1)
-(projectile-global-mode 1)
-(ido-mode 1)
-(add-hook 'after-init-hook 'session-initialize)
-(custom-set-variables '(session-save-file "~/dotfiles/emacs.d/emacs.session"))
-;(setq epa-file-cache-passphrase-for-symmetric-encryption t)
-;(if (file-exists-p "~/.authinfo.gpg")
-;    (setq auth-sources '((:source "~/.authinfo.gpg" :host t :protocol t)))
-;    (setq auth-sources '((:source "~/.authinfo" :host t :protocol t))))
-;(setq (auth-sources (list nntp-authinfo-file)))
-;(setq exec-path (append exec-path '("/usr/local/bin")))
-;(setq nntp-authinfo-file "~/.authinfo.gpg")
-;(setq erc-autojoin-channels-alist '(("freenode.net" "#emacs")))
-;(erc :server "irc.freenode.net" :port 6667 :nick "opossomme")
-(setq org-log-done 'note)               ;
-(electric-pair-mode)                    ; Paire "" () []
-(setq visible-bell 0)                   ; Enleve le son d'alerte
-(setq tab-width 4)
-(setq ring-bell-function 'ignore)       ; Enleve le flash d'alerte
-(setq org-directory "~/Documents personnels/Emacs/org/")
-(setq org-default-notes-file (concat org-directory "/notes.org"))
-(setq inhibit-splash-scr t)
-(setq locate-command "mdfind")
-(setq
- backup-by-copying t
- backup-directory-alist '(("." . "~/.saves"))
- delete-old-versions t
- kept-new-versions 6
- kept-old-versions 2
- yas-snippets-dirs "~/snippets"
- version-control t)
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
-
-(setq-default indent-tabs-mode nil)
-
-(require 'server)
-(unless (server-running-p)
-  (server-start))
-
-(set-face-attribute 'default nil :family "Consolas")
-
-;; Raccourcis clavier
-;; (global-set-key "\C-cl" 'org-store-link)
-;; (global-set-key "\C-ca" 'org-agenda)
-;; (global-set-key "\C-cb" 'org-iswitchb)
-;; (global-set-key "\C-cc" 'org-capture)
-(global-set-key "\C-cge" (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
-(global-set-key "\C-cgx" 'eval-buffer)
-(global-set-key "\C-c\C-c" 'switch-to-previous-buffer)
-(global-set-key "\C-cgb" 'recentf-open-files)
-(global-set-key "\C-cgp" 'package-list-packages)
+(when (window-system)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1))
 
 (global-unset-key "\C-z")
 
@@ -89,12 +39,12 @@
 ;; (find-file "~/dotfiles/emacs.d/org/tp_suivi.org")
 (setq inhibit-startup-message t)
 
-(add-to-list 'default-frame-alist
-             '(font . "Droid Sans Mono-10"))
+
 
 ;; yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
+(evil-mode)
 
 ;; (add-hook 'kill-emacs-hook
 ;;        (append-to-file "brume"
