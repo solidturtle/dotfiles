@@ -16,6 +16,7 @@
  ido-enable-flex-matching t
  indent-tabs-mode nil
  inhibit-splash-scr t
+ inhibit-startup-message t
  kept-new-versions 6
  kept-old-versions 2
  locate-command "mdfind"
