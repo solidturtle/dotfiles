@@ -7,3 +7,4 @@ emacs.d/projectile-bookmarks.eld
 emacs.d/recentf
 vim/bundle
 .DS_Store
+emacs.d/.emacs.desktop
