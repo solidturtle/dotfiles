@@ -1,5 +1,7 @@
-(provide 'window-system)
+(provide 'my_window_system)
 (when (window-system)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1)
   (require 'git-gutter-fringe))
 
 (global-git-gutter-mode +1)

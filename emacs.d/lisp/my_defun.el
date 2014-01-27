@@ -1,3 +1,5 @@
+(provide 'my_defun)
+
 (defun package-save-list ()
   "Save packages list in a file ~/dotfiles/emacs.d/packages"
   (interactive)
@@ -15,7 +17,10 @@
 	     (insert-file-contents "~/dotfiles/emacs.d/packages")
 	     (split-string (buffer-string) "\n" )))
     (when (not (require (intern p) nil t))
-	(package-install (intern p))))
-)
+	(package-install (intern p)))))
+
+(defun switch-to-previous-buffer ()
+  (interactive)
+  (switch-to-buffer (other-buffer (current-buffer) 1)))
 
 
