@@ -1,6 +1,6 @@
-. ~/dotfiles/bash/env
-. ~/dotfiles/bash/config
-. ~/dotfiles/bash/aliases
-. ~/dotfiles/bash/functions
-. ~/dotfiles/bash/os
-. ~/dotfiles/bash/honey
+. ~/dotfiles/bash/env.sh
+. ~/dotfiles/bash/config.sh
+. ~/dotfiles/bash/aliases.sh
+. ~/dotfiles/bash/functions.sh
+. ~/dotfiles/bash/os.sh
+. ~/dotfiles/bash/honey.sh
