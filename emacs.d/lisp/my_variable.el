@@ -17,6 +17,8 @@
  indent-tabs-mode nil
  inhibit-splash-scr t
  inhibit-startup-message t
+ jedi:complete-on-dot t
+ jedi:setup-keys t
  kept-new-versions 6
  kept-old-versions 2
  locate-command "mdfind"
