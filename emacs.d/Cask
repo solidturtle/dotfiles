@@ -22,6 +22,7 @@
 (depends-on "helm")
 (depends-on "highlight-parentheses")
 (depends-on "jedi")
+(depends-on "js2-mode")
 (depends-on "magit")
 (depends-on "menu-bar+")
 (depends-on "mmm-mode")
