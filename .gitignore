@@ -8,3 +8,5 @@ emacs.d/recentf
 vim/bundle
 .DS_Store
 emacs.d/.emacs.desktop
+/emacs.d/tmp
+/emacs.d/*.dat
